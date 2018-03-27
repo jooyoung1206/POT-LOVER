@@ -1,0 +1,18 @@
+var myHeading = document.querySeleactor('h1');
+ myHeading.innerHTML = 'Cloude server<br>2018-1!';
+-var text = 'This is a text.';
+function getIdPw() {
+    var id = prompt('ID 입력', '');
+    var passwoard = prompt(id + '가 사용할 초기 비번 입력', '');
+    localStorage.setltem('id', id);
+    localStorage.setItem('password', password);
+}
+var password = localStorage.getItem('password');
+if (!passwoard) {
+    getIdPw()'
+}
+// Passwoard;
+
+var id = localStorage.getItem('id');
+var heading = document.querySelector('h1');
+heading.innerHTML = id + '\'s 'Homepage';
