@@ -1,10 +1,12 @@
 var myHeading = document.querySeleactor('h1');
-myHeading.innerHTML = 'Cloude server<br>2018-1!';
+var id = localStorage.getItem('id');
+myHeading.innerHTML = id + 'Homepage';
 
 function getIdPw() {    
 text = 10.5;
     var id =prompt('ID 입력', '');
     alert(id + '가 로그인함.');
+    localStorage.setItem('id', id);
     var passwordSystem = '12345';
     var password = prompt('PW 입력', '');
     if (password === passwordSystem) alert('정상 로그인!');
@@ -24,4 +26,9 @@ if (src === 'images/firefox-icon.png') {
 } else {
     myImg.setAtrribute('src', 'images/firefox-icon.png');
     }
+}
+
+var myButton = document.querySelector('button');
+myButton.onclick = function ( {
+    getIdPw();
 }
